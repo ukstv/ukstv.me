@@ -4,7 +4,7 @@
   "private": true,
   "license": "LicenseRef-LICENSE",
   "scripts": {
-    "container:build": "docker build -t ${CONTAINER_REGISTRY}/ukstv/ukstv.me:${npm_package_version} .",
-    "container:push": "docker push ${CONTAINER_REGISTRY}/ukstv/ukstv.me:${npm_package_version}"
+    "container:build": "docker build -t ${CONTAINER_REGISTRY}/ukstv.me:${npm_package_version} .",
+    "container:push": "docker push ${CONTAINER_REGISTRY}/ukstv.me:${npm_package_version}"
   }
 }
