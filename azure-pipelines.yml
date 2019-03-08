@@ -5,9 +5,9 @@ pool:
   vmImage: 'Ubuntu-16.04'
 
 steps:
-  - script: npm container:build
+  - script: npm run container:build
     displayName: 'Build container image'
   - script: docker login -u $(PRINCIPAL_CLIENT_ID) -p $(PRINCIPAL_SECRET) $(CONTAINER_REGISTRY_URL)
     displayName: 'Login into container repository'
-  - script: npm container:push
+  - script: npm run container:push
     displayName: 'Push container image'
