@@ -1,0 +1,8 @@
+html, body {
+    background:#777;
+    margin:0;
+}
+#canvas {
+    position:fixed;
+    background:#777;
+}
